@@ -14,7 +14,7 @@
     
     <TextView 
         android:id="@+id/say"
-      android:layout_width="80dp";
+      android:layout_width="80dp"
       android:layout_height="20dp"
       android:text="helloworld"
       android:layout_below="@+id/icon" ></TextView>
