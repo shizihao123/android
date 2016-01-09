@@ -12,10 +12,10 @@
     <LinearLayout
         android:id="@+id/linearLayout1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_centerHorizontal="true"
         android:orientation="vertical" 
-        android:layout_weight="2">
+        android:layout_weight="5">
 
         <LinearLayout
             android:id="@+id/linearLayout2"
@@ -29,6 +29,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:src="@drawable/s4" 
                 android:text="11" />
 
             <ImageButton
@@ -36,6 +37,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:src="@drawable/s1" 
                 android:text="12" />
 
             <ImageButton
@@ -43,6 +45,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1.00"
+                android:src="@drawable/s2" 
                 android:text="13" />
 
         </LinearLayout>
@@ -59,6 +62,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:src="@drawable/s3" 
                 android:text="11" />
 
             <ImageButton
@@ -66,6 +70,8 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:src="@drawable/s4" 
+                android:visibility="invisible"
                 android:text="12" />
 
             <ImageButton
@@ -73,6 +79,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1.00"
+                android:src="@drawable/s5"
                 android:text="13" />
 
         </LinearLayout>
@@ -89,6 +96,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:src="@drawable/s6"
                 android:text="11" />
 
             <ImageButton
@@ -96,6 +104,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:src="@drawable/s0"
                 android:text="12" />
 
             <ImageButton
@@ -103,6 +112,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1.00"
+                android:src="@drawable/s4"
                 android:text="13" />
 
         </LinearLayout>
@@ -122,13 +132,14 @@
         android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="0dp">
+
 	    <Button
 	        android:id="@+id/btn_start"
 	        android:layout_width="0dp"
-	        android:layout_height="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1.00"
 	        android:background="#00ff00"
-	        android:text="开始" 
-	        android:layout_weight="1"/>
+	        android:text="开始" />
 	    
 	    <Button
 	        android:id="@+id/btn_middle"
@@ -137,14 +148,13 @@
 	        android:layout_weight="1"
 	        android:visibility="invisible"/>
 	
-	
 	    <Button
 	        android:id="@+id/btn_vote"
 	        android:layout_width="0dp"
-	        android:layout_height="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1.00"
 	        android:background="#0000ff"
-	        android:text="下注"
-	        android:layout_weight="1" />
+	        android:text="下注" />
     
     </LinearLayout>>
 
@@ -154,6 +164,7 @@
         android:layout_height="0dp"
         android:background="#ff00ff"
         android:layout_weight="1.2"
-        android:text="金币" />
+        android:gravity="center"
+        android:text="金币:" />
 
 </LinearLayout>
