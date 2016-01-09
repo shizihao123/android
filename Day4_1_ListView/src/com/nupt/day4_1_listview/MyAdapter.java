@@ -48,14 +48,29 @@ public class MyAdapter extends BaseAdapter {
 
 	@Override
 	public View getView(int position, View view, ViewGroup arg2) {
-		view = LayoutInflater.from(context).inflate(R.layout.item, null);
-		ImageView image=(ImageView)view.findViewById(R.id.item1);
-		TextView name = (TextView)view.findViewById(R.id.name);
-		TextView sign = (TextView)view.findViewById(R.id.sign);
-		image.setImageResource(images[position]);
-		name.setText(names[position]);
-		sign.setText(signs[position]);
+		 ViewHolder holder = null;
+		if(view == null){
+			view = LayoutInflater.from(context).inflate(R.layout.item, null);
+			holder = new ViewHolder();
+			holder.image=(ImageView)view.findViewById(R.id.item1);
+			holder.name = (TextView)view.findViewById(R.id.name);
+			holder.sign = (TextView)view.findViewById(R.id.sign);
+			view.setTag(holder);
+		}else{
+			holder = (ViewHolder)view.getTag();
+		}	
+		
+		holder.image.setImageResource(images[position]);
+		holder.name.setText(names[position]);
+		holder.sign.setText(signs[position]);
 		return view;
+	}
+	
+	class ViewHolder{
+		ImageView image;
+		TextView  name;
+		TextView  sign;
+
 	}
 
 }
