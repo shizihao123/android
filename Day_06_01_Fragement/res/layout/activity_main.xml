@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+    
+    <fragment
+        android:name="com.nupt.day_06_01_fragement.FirstFragment"
+        android:id="@+id/first"
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        />
+    
+    <fragment
+        android:name="com.nupt.day_06_01_fragement.fragment2"
+        android:id="@+id/second"
+        android:layout_height="100dp"
+        android:layout_below="@+id/first"
+        android:layout_width="match_parent"
+        />
+    
+    
+   
+   <!--  <com.nupt.day_06_01_fragement.FirstFragment
+        android:id="@+id/first"
+        android:layout_height="100dp"
+        android:layout_width="match_parent">
+        
+    </com.nupt.day_06_01_fragement.FirstFragment>
+   
+   <com.nupt.day_06_01_fragement.fragment2
+        android:id="@+id/second"
+        android:layout_height="100dp"
+        android:layout_width="match_parent">
+       
+   </com.nupt.day_06_01_fragement.fragment2>
+    anroid:name 指定当前activity中引入的fragment的包名加类名 
+    -->
+</RelativeLayout>
